@@ -94,10 +94,11 @@
 .container__text-input:focus {
   border-bottom: 2px solid #560bad;
 }
-
 .container__text-input:focus + .input-label {
   color: #560bad;
-  transform: translateX(-30px);
+  top: 10px;
+  transition: all 0.4s ease;
+  font-size: 14px;
 }
 
 .container__switch {

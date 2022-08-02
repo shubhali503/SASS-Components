@@ -97,15 +97,13 @@
     border-bottom: 1px solid black;
     &:focus{
         border-bottom: 2px solid #560bad;
-        // .input-label{
-            
-        // }
+        &+ .input-label{
+            color: $labelColor;
+            top: 10px;
+            transition: all 0.4s ease;
+            font-size: 14px;
+        }
     }
-}
-
-.container__text-input:focus + .input-label{
-    color: $labelColor;
-            transform: translateX(-30px);
 }
 
 .container__switch{
